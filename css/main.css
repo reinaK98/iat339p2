@@ -91,7 +91,10 @@ p {
   font-size: 100%;
   margin-top: 0;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   max-width: 800px;
   width: 50%;
 }
@@ -143,7 +146,10 @@ text-decoration: none;
 -webkit-transition: background-color 0.5s ease-out;
 transition: background-color 0.5s ease-out;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -293,7 +299,10 @@ display: flex;
 align-items: baseline;
 background-color: #FFFFFF;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 
 .nav-bar div{
@@ -363,6 +372,7 @@ flex: 1
   font-family: 'foglihtenregular', serif;
   padding-left: 2.5rem;
 }
+<<<<<<< Updated upstream
 
 .prod-details{
   font-family: 'foglihtenregular', serif;
@@ -370,6 +380,8 @@ flex: 1
   max-width: 800px;
   width: 50%;
 }
+=======
+>>>>>>> Stashed changes
 .listing{
   font-family: 'foglihtenregular', serif;
   padding-right: 3rem;
@@ -397,6 +409,7 @@ flex: 1
   background: #FAF8F4;
 }
 
+<<<<<<< Updated upstream
 .productdetails {
   margin-top: 2rem;
   padding: 5rem;
@@ -421,6 +434,8 @@ flex: 1
   background: #FAF8F4;
 }
 
+=======
+>>>>>>> Stashed changes
 .New {
   margin-top: 40rem;
   padding: 5rem;
