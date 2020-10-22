@@ -90,7 +90,7 @@ p {
   font-family: 'foglihtenregular', Arial, sans-serif;
   font-size: 100%;
   margin-top: 0;
-  padding-left: 2.5rem;
+
 
   max-width: 800px;
   width: 50%;
@@ -392,6 +392,30 @@ flex: 1
 }
 
 .contactinfo {
+  margin-top: 2rem;
+  padding: 5rem;
+  background: #FAF8F4;
+}
+
+.productdetails {
+  margin-top: 2rem;
+  padding: 5rem;
+  background: #FAF8F4;
+}
+
+.productlisting{
+  margin-top: 2rem;
+  padding: 5rem;
+  background: #FAF8F4;
+}
+
+.checkoutcart{
+  margin-top: 2rem;
+  padding: 5rem;
+  background: #FAF8F4;
+}
+
+.payment{
   margin-top: 2rem;
   padding: 5rem;
   background: #FAF8F4;
