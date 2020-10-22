@@ -1,0 +1,399 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+@font-face {
+    font-family: 'crimson_foamregular';
+    src: url('../fonts/crimson_foam_font-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_foam_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviardreams-webfont';
+  src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+       url('../fonts/caviardreams-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsextralight';
+    src: url('../fonts/poppins-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsthin';
+    src: url('../fonts/poppins-thin-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'foglihtenregular';
+    src: url('../fonts/foglihten-068-webfont.woff2') format('woff2'),
+         url('../fonts/foglihten-068-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  font-family: 'foglihtenregular', Arial, sans-serif;
+  height: 100%;
+    background-image: url('../img/cafe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1 {
+  font-family: 'crimson_foamregular', Arial, sans-serif;
+  font-size: 800%;
+  margin-top: 1rem;
+
+}
+
+h2 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  font-size: 300%;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-family: 'poppinsextralight', Arial, sans-serif;
+  font-size: 200%;
+  margin-top: 4rem;
+}
+
+h4 {
+  font-family: 'foglihtenregular', Arial, sans-serif;
+  font-size: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'foglihtenregular', Arial, sans-serif;
+  font-size: 100%;
+  margin-top: 0;
+
+  max-width: 800px;
+  width: 50%;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+hr{
+  display: block;
+  border: 1px inset;
+  width:350px;
+  height:1px;
+  margin-right: auto;
+  background-color: #000;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+
+.textlink-nav {
+  color: #14130F;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+.textlink-nav:hover, .textlink-nav:focus {
+  color: #E1CFC3;
+}
+
+/* Styling for the navigation button */
+
+.button-nav {
+  display: inline-block;
+padding: 0.5em 0.75em;
+color: #FFF;
+background-color: #885A43;
+border-radius: 0.25em;
+text-decoration: none;
+-webkit-transition: background-color 0.5s ease-out;
+transition: background-color 0.5s ease-out;
+
+}
+
+.button-nav:hover, .button-nav:focus {
+background-color: #5A3D2D;
+  cursor: pointer;
+}
+/* Styling for the Image as a Link */
+
+.imglink-nav {
+  text-decoration: none;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.imglink-nav:hover, .imglink-nav:focus {
+  opacity: 0.5;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for the label and text input */
+
+.label {
+  font-family: 'poppinsextralight', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: #5A3D2D;
+}
+
+.textinput-nav {
+  border-style: none;
+  border-bottom: 0.1rem solid #5A3D2D;
+  color: #5A3D2D;
+  background-color: #E1CFC3;
+  display: block;
+  margin: 0.2rem 0 0 0;
+  padding: 5px 8px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.textinput-nav:hover, .textinput-nav:focus {
+  background-color: #FFFFFF;
+}
+
+/* Styling for the reset and submit button */
+
+.reset-nav {
+  padding: 0.6rem 0.9rem;
+  color: white;
+  background-color: #2D190E;
+  border-style: none;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.reset-nav:hover, .reset-nav:focus {
+  background-color: #E1CFC3;
+}
+
+.submit-nav {
+  padding: 0.6rem 0.9rem;
+  color: white;
+  background-color: #2D190E;
+  border-style: none;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.submit-nav:hover, .submit-nav:focus {
+  background-color: #E1CFC3;
+}
+
+.color1 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #E1CFC3;
+  text-decoration: none;
+}
+
+.color2 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #885A43;
+  text-decoration: none;
+}
+
+.color3 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #5A3D2D;
+  text-decoration: none;
+}
+
+.color4 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #2D190E;
+  text-decoration: none;
+}
+
+.color5 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #14130F;
+  text-decoration: none;
+}
+
+.link-nav {
+  font-family: 'poppinsbold', sans-serif;
+    font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+    color: #000;
+    text-decoration: none;
+}
+.link-nav:hover, .link-nav:focus {
+  color: #885A43;
+    cursor: pointer;
+}
+.nav-bar{
+display: flex;
+align-items: baseline;
+background-color: #FFFFFF;
+
+}
+
+.nav-bar div{
+/* border: 1px #000 solid;*/
+}
+
+.logo{
+  flex:1;
+  margin-left: 2rem;
+}
+
+.home{
+  flex:.3;
+
+}
+
+.menu{
+  flex:.3;
+
+}
+
+.locations{
+  flex:.3;
+
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  max-width: 350px;
+}
+
+.cart div{
+
+}
+
+.your-cart{
+  font-family: 'poppinsextralight', Arial, sans-serif;
+  font-size: 200%;
+padding-bottom: 2rem;
+flex: 1
+
+}
+
+.cart-item1{
+
+  flex:1;
+}
+
+.cart-item2{
+  flex:1;
+}
+.cart-item3{
+  flex:1;
+}
+
+.sub-header{
+  font-family: 'poppinsregular', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 5rem;
+  padding-left: 5em;
+}
+
+.tab{
+  font-family: 'foglihtenregular', serif;
+  padding-left: 2.5rem;
+}
+.listing{
+  font-family: 'foglihtenregular', serif;
+  padding-right: 3rem;
+}
+.prod-listing{
+  display: flex;
+  padding-bottom: 3rem;
+  padding-left: 5em;
+}
+
+.container1{
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 5rem;
+  max-width: 300px;
+}
+
+.name{
+  flex:1;
+}
+
+.contactinfo {
+  margin-top: 2rem;
+  padding: 5rem;
+  background: #FAF8F4;
+}
+
+.New {
+  margin-top: 40rem;
+  padding: 5rem;
+  background: #E1CFC3;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+}
