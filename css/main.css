@@ -83,14 +83,14 @@ h3 {
 
 h4 {
   font-family: 'foglihtenregular', Arial, sans-serif;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
 p {
   font-family: 'foglihtenregular', Arial, sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   margin-top: 0;
   max-width: 100%;
   width: 80%;
@@ -444,7 +444,9 @@ img {
   display: flex;
   flex-wrap: wrap;
 
+
 }
+
 
 /* Four equal columns */
 .column {
