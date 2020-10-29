@@ -62,38 +62,47 @@ body {
 
 h1 {
   font-family: 'crimson_foamregular', Arial, sans-serif;
-  font-size: 800%;
+  font-size: 4vw;
   margin-top: 1rem;
 
 }
 
 h2 {
   font-family: 'caviardreams-webfont', Arial, sans-serif;
-  font-size: 300%;
-  margin-top: 1rem;
+  font-size: clamp(2.5rem, 3vw, 5rem);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-family: 'poppinsextralight', Arial, sans-serif;
-  font-size: 200%;
+  color: #ffffff;
+  font-size: clamp(2rem, 3vw, 2.5rem);
   margin-top: 4rem;
 }
 
 h4 {
   font-family: 'foglihtenregular', Arial, sans-serif;
-  font-size: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 p {
   font-family: 'foglihtenregular', Arial, sans-serif;
-  font-size: 100%;
+  font-size: clamp(1rem, 2vw, 2rem);
   margin-top: 0;
+  max-width: 100%;
+  width: 80%;
+}
 
-
-  max-width: 800px;
-  width: 50%;
+li {
+  font-family: 'foglihtenregular', Arial, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 0;
+  max-width: 100%;
+  width: 80%;
+  color: #FFFFFF;
 }
 
 nav a:hover, nav a:focus {
@@ -105,6 +114,7 @@ code {
   padding: 0.5rem;
   display: block;
 }
+
 hr{
   display: block;
   border: 1px inset;
@@ -134,7 +144,7 @@ hr{
 /* Styling for the navigation button */
 
 .button-nav {
-  display: inline-block;
+display: inline-block;
 padding: 0.5em 0.75em;
 color: #FFF;
 background-color: #885A43;
@@ -278,12 +288,13 @@ background-color: #5A3D2D;
 .link-nav {
   font-family: 'poppinsbold', sans-serif;
     font-weight: bold;
-  font-size: 1rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
   display: inline-block;
-  padding: 0.5em 0.75em;
+  padding: 1vw;
     color: #000;
     text-decoration: none;
 }
+
 .link-nav:hover, .link-nav:focus {
   color: #885A43;
     cursor: pointer;
@@ -305,19 +316,8 @@ background-color: #FFFFFF;
   margin-left: 2rem;
 }
 
-.home{
-  flex:.3;
-
-}
-
 .menu{
   flex:.3;
-
-}
-
-.locations{
-  flex:.3;
-
 }
 
 .cart{
@@ -326,10 +326,6 @@ background-color: #FFFFFF;
   padding-top: 5rem;
   padding-bottom: 3rem;
   max-width: 350px;
-}
-
-.cart div{
-
 }
 
 .your-cart{
@@ -389,12 +385,19 @@ flex: 1
 
 .name{
   flex:1;
+  font-size: clamp(1.7rem, 2vw, 2rem);
 }
 
 .contactinfo {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 5rem;
-  background: #FAF8F4;
+  background: rgb(250, 248, 244);
+}
+
+.footnote {
+  margin-top: 1rem;
+  padding: 5rem;
+  background: rgb(54,54,54);
 }
 
 .productdetails {
@@ -422,12 +425,45 @@ flex: 1
 }
 
 .New {
-  margin-top: 40rem;
+  margin-top: 1rem;
   padding: 5rem;
-  background: #E1CFC3;
+  background: rgb(225,207,195);
 }
 
 img {
   max-width: 100%;
   height:auto;
+  object-fit: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Four equal columns */
+.column {
+  flex: 25%;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  margin: 1rem;
+}
+
+/* If a screen is 992px or less wide, keep two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* If a screen is 600px or less wide, stack the columns on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
