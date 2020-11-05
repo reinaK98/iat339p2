@@ -8,48 +8,59 @@
 
   <link href="css/main.css" rel="stylesheet">
 
+  <script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
 </head>
 
 <body>
-  <div class="nav-bar">
-    <div class="logo">
-      <h2> Little Owl Cafe </h2>
-    </div>
 
-    <div class="menu">
-      <a class="link-nav" href="index.html"> Home</a>
-    </div>
 
-    <div class="menu">
-      <a class="link-nav" href="product-listing.html"> Menu</a>
-    </div>
+<a class="logo" href="index.html">Little Owl Cafe</a>
 
-    <div class="menu">
-      <a class="link-nav" href="checkout-cart.html"> Cart</a>
-    </div>
+<div class="topnav" id="myTopnav">
 
-  </div>
+  <a href="index.html">Home</a>
+  <a href="product-listing.html">Menu</a>
+  <a href="payment.html">Cart</a>
 
-  <section class="New">
-    <h4> New Products </h4>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-    <div class="row">
+<section class="About">
+  <h2> Everybody needs a cup of good coffee </h2>
+</section>
 
-      <div class="column">
 
-        <Figure>
-          <a class="imglink-nav" href="product-details.html"> <img src="img/Example coffee.jpg" alt="example coffee">
-          </figure>
+<section class="New">
+  <h3> New Products </h3>
 
-          <div class="name">
-            <a class="tab"> Coffee </a>
-          </div>
+  <div class="row">
 
+    <div class="column">
+
+      <Figure>
+        <a class="imglink-nav" href="product-details.html"> <img src="img/Example coffee.jpg" alt="example coffee">
+        </figure>
+
+        <div class="name">
+          <a class="tab"> Coffee </a>
         </div>
 
-        <div class="column">
-          <Figure>
-            <a class="imglink-nav" href="product-details.html">  <img src="img/Latte.jpg" alt="picture of a latte">
+      </div>
+
+      <div class="column">
+        <Figure>
+          <a class="imglink-nav" href="product-details.html">  <img src="img/Latte.jpg" alt="picture of a latte">
           </figure>
 
           <div class="name">
@@ -61,57 +72,81 @@
 
           <Figure>
             <a class="imglink-nav" href="product-details.html">  <img src="img/Cappuccino.jpg" alt="picture of a Cappuccino">
-          </figure>
+            </figure>
 
-          <div class="name">
-            <a class="tab"> Cappuccino  </a>
+            <div class="name">
+              <a class="tab"> Cappuccino  </a>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
+      </section>
+
+      <section class="company">
+
+        <div class="row">
+
+          <div class="column">
+
+            <img src="img/pumpkin.jpg" alt="picture of a pumpkin spice latte">
+
+          </div>
+
+          <div class="column">
+            <h3> Company Updates </h3>
+
+            <p> Winter is here! We have a new winter menu to celebrate the joyeous holidays coming soon! Nothing says fall quite like Pumpkin Spice Latte and Pumpkin Cream Cold Brew, swirling with notes of cinnamon and nutmeg!
+              <br><br> Steamed milk is combined with a blend of pumpkin and traditional fall spice flavours. Enjoy it finished with whipped cream and Pumpkin Spice topping.</p>
 
 
-      <h4> Company Updates </h4>
-      <p> Winter is here! We have a new winter menu to celebrate the joyeous holidays coming soon! Nothing says fall quite like Pumpkin Spice Latte and Pumpkin Cream Cold Brew, swirling with notes of cinnamon and nutmeg! </p>
+          </div>
+        </div>
 
 
-    </section>
 
-    <section class="contactinfo">
 
-      <h4>Where to find us</h4>
-      <p> 10201 N De Anza Blvd, Burnaby, BC </p><br>
 
-      <Figure>
-        <img src="img/map.png" alt="map of the cafe location">
-      </figure>
+      </section>
 
-      <h4>Contact Us</h4>
-      <p> TEL: 604-123-4567 </p>
-      <p> E-MAIL: info@nightowlcafe.ca </p>
+      <section class="contactinfo">
 
-    </section>
 
-    <section class="footnote">
 
-      <h3>Citation</h3>
+        <Figure>
+          <img src="img/map.png" alt="map of the cafe location">
+        </figure>
 
-      <ul>
-        <li> Flexible Column Example Code https://www.bitdegree.org/learn/best-code-editor/css3-media-queries-examples-example-4-4 </li>
-        <li> Description of Pumpkin Spice Latte https://www.starbucks.ca/ </li>
-        <li> Coffee Beans Wallpaper https://www.pinterest.ca/ </li>
-        <li> Map Image https://medium.com/flutter-community/implement-real-time-location-updates-on-google-maps-in-flutter-235c8a09173e </li>
-        <li> Black tea image: https://www.joshuaaustindds.com/tpn/gen/Clear-Glass-Cup-of-Tea-on-clear-plate.jpg </li>
-        <li> Green tea image: https://cafedeoro-rw.com/wp-content/uploads/2017/10/MatchaLatte_1.jpg</li>
-        <li> Chai tea image: https://www.mealplanningmagic.com/wp-content/uploads/2020/02/chai-tea-concentrate-latte-in-cup-2-edited-2.jpg</li>
-        <li> Latte image: https://www.caffesociety.co.uk/assets/recipe-images/latte-small.jpg </li>
-        <li> Cappuccino image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTp7M4K6IwCvd4UELmOAXuilUz__SYaLSobA&usqp=CAU</li>
-        <li> Coffee image: https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG</li>
-      </ul>
+        <div class="row">
 
-    </section>
+          <div class="column">
 
-  </body>
+            <h3>Where to find us</h3>
+            <p> 10201 N De Anza Blvd, Burnaby, BC </p>
 
-  </html>
+          </div>
+
+          <div class="column">
+
+            <h3>Contact Us</h3>
+            <p> TEL: 604-123-4567 </p>
+            <p> E-MAIL: info@nightowlcafe.ca </p>
+
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <section class="footnote">
+
+        <h3>Citation</h3>
+        <a class="textlink-nav" href="citation.html">List of Citation</a>
+
+      </section>
+
+    </body>
+
+    </html>

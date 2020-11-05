@@ -8,26 +8,30 @@
 
     <link href="css/main.css" rel="stylesheet">
 
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
   </head>
 
   <body>
-    <div class="nav-bar">
-      <div class="logo">
-        <h2> Little Owl Cafe </h2>
-      </div>
+    <a class="logo" href="index.html">Little Owl Cafe</a>
 
-      <div class="menu">
-        <a class="link-nav" href="index.html"> Home</a>
-      </div>
+    <div class="topnav" id="myTopnav">
 
-      <div class="menu">
-        <a class="link-nav" href="product-listing.html"> Menu</a>
-      </div>
+      <a href="index.html">Home</a>
+      <a href="product-listing.html">Menu</a>
+      <a href="payment.html">Cart</a>
 
-      <div class="menu">
-        <a class="link-nav" href="checkout-cart.html"> Cart</a>
-      </div>
-
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
 
