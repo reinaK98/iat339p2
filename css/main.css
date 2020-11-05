@@ -63,23 +63,19 @@ body {
 
 h1 {
   font-family: 'crimson_foamregular', Arial, sans-serif;
-  font-size: 4vw;
+  font-size: clamp(10rem, 2vw, 20rem);
   margin-top: 1rem;
 
 }
 
 h2 {
-  font-family: 'caviardreams-webfont', Arial, sans-serif;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 10rem;
-  text-align: center;
-  color: rgba(255,255,255,90%);
+  font-family: 'poppinsextralight', Arial, sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-top: 4rem;
 }
 
 h3 {
-  font-family: 'poppinsextralight', Arial, sans-serif;
+  font-family: 'poppinsthin', Arial, sans-serif;
   font-size: clamp(1.7rem, 3vw, 2rem);
   margin-top: 4rem;
 }
@@ -148,8 +144,18 @@ INTERACTIVE ELEMENTS -------------------
   background-size: cover;
 }
 
+.About h2 {
+  font-family: 'caviardreams-webfont', Arial, sans-serif;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 10rem;
+  text-align: center;
+  color: rgba(255,255,255,90%);
+}
+
 .textlink-nav {
-  color: #ffffff;
+  color: #363636;
   transition-property: color;
   transition-duration: 0.2s;
   text-decoration: none;
@@ -414,6 +420,10 @@ COMBINED ELEMENTS -------------------
   margin-top: 1rem;
   padding: 5rem;
   background: rgb(54,54,54);
+  color: #ffffff;
+}
+
+.footnote a {
   color: #ffffff;
 }
 
