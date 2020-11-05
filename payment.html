@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <title>P02 - Product Listing</title>
+  <meta charset="utf-8">
+  <title>P02 - Product Listing</title>
 
-    <link href="css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-    <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-
+  <script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
+
+  }
   </script>
 
-  </head>
+</head>
 
-  <body>
-    <a class="logo" href="index.html">Little Owl Cafe</a>
+<body>
+  <a class="logo" href="index.html">Little Owl Cafe</a>
 
-    <div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav">
 
-      <a href="index.html">Home</a>
-      <a href="product-listing.html">Menu</a>
-      <a href="checkout-cart.html">Cart</a>
+    <a href="index.html">Home</a>
+    <a href="product-listing.html">Menu</a>
+    <a href="checkout-cart.html">Cart</a>
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+  <section class="payment">
+    <div class="your-cart">
+      <a class="sub-header"> Payment Method </a>
     </div>
 
 
-    <section class="payment">
-      <div class="your-cart">
-      <a class="sub-header"> Payment Method </a>
-      </div>
+    <input type="radio" id="Visa" name="Payment" value="Visa">
+    <label for="Visa">Visa</label><br>
+    <input type="radio" id="Mastercard" name="Payment" value="Mastercard">
+    <label for="Mastercard">Mastercard</label><br>
+    <input type="radio" id="InStore" name="Payment" value="InStore">
+    <label for="InStore">In Store</label><br><br>
+
+    <form action="/action_page.php" method="get">
+      <label class="label">Card Holder's Name:</label> <input class="textinput-nav" type="text">
+      <label class="label">Card Number:</label> <input class="textinput-nav" type="text">
+      <label class="label">Expiry Date:</label> <input class="textinput-nav" type="text">
+      <label class="label">CVC:</label> <input class="textinput-nav" type="text">
 
 
-      <input type="radio" id="Visa" name="Payment" value="Visa">
-      <label for="Visa">Visa</label><br>
-      <input type="radio" id="Mastercard" name="Payment" value="Mastercard">
-      <label for="Mastercard">Mastercard</label><br>
-      <input type="radio" id="InStore" name="Payment" value="InStore">
-      <label for="InStore">In Store</label><br><br>
-
-      <form action="/action_page.php" method="get">
-        <label for="CardName">Card Holder's Name:</label>
-        <input type="text" id="CardName" name="CardName"><br><br>
-        <label for="CardNum">Card Number:</label>
-        <input type="text" id="CardNum" name="CardNum"><br><br>
-        <label for="ExpireDate">Expire Date:</label>
-        <input type="text" id="ExpireDate" name="ExpireDate">
-        <label for="CVC">CVC:</label>
-        <input type="text" id="CVC" name="CVC"><br><br>
-
-        <a class="button-nav" href="index.html">Continue</a>
+      <a class="button-nav" href="index.html">Continue</a>
     </section>
 
 
 
 
-</section>
-      </body>
+  </section>
+</body>
 
-    </html>
+</html>
