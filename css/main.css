@@ -80,7 +80,7 @@ h2 {
 
 h3 {
   font-family: 'poppinsextralight', Arial, sans-serif;
-  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-size: clamp(1.7rem, 3vw, 2rem);
   margin-top: 4rem;
 }
 
@@ -93,7 +93,7 @@ h4 {
 
 p {
   font-family: 'foglihtenregular', Arial, sans-serif;
-  font-size: clamp(1.5rem, 2vw, 1.7rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   margin-top: 1rem;
   max-width: 100%;
   width: 85%;
@@ -116,11 +116,23 @@ code {
 hr{
   display: block;
   border: 1px inset;
-  width:350px;
+  max-width:350px;
   height:1px;
   margin-right: auto;
   background-color: #000;
 }
+
+.horizontal-line{
+  display: block;
+  border: .5px inset;
+  max-width: 600px;
+  height:1px;
+    margin-left: 0;
+  background-color: #000;
+
+}
+
+
 
 
 /*
@@ -324,8 +336,10 @@ COMBINED ELEMENTS -------------------
 .cart{
   display: flex;
   flex-direction: column;
+
   padding-top: 5rem;
   padding-bottom: 3rem;
+
   max-width: 350px;
 }
 
@@ -359,6 +373,7 @@ COMBINED ELEMENTS -------------------
 .tab{
   font-family: 'foglihtenregular', serif;
   padding-left: 2.5rem;
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
 }
 
 .prod-details{
@@ -452,7 +467,7 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
-
+align-items:center;
 
 }
 
@@ -483,7 +498,7 @@ img {
 .logo{
   font-family: 'crimson_foamregular', Arial, sans-serif;
   font-size: clamp(5rem, 2vw, 10rem);
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: center;
   text-decoration: none;
@@ -552,4 +567,6 @@ img {
     width: 100%;
     text-align: left;
   }
+
+
 }

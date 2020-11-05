@@ -7,6 +7,7 @@
   <title>P02 - Product Listing</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script>
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -29,7 +30,7 @@
 
     <a href="index.html">Home</a>
     <a href="product-listing.html">Menu</a>
-    <a href="payment.html">Cart</a>
+    <a href="checkout-cart.html">Cart</a>
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -45,11 +46,21 @@
 
       <div class="column">
         <div class="row">
-          <h4> Coffee      :</h4>
+          <h3> Coffee      :</h3>
           <div class="row">
-            <h4> $3 </h4>
+            <h3> $3 </h3>
           </div>
         </div>
+
+        <!-- Learned from: https://www.w3schools.com/howto/howto_css_star_rating.asp -->
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+
+        <hr class ="horizontal-line">
 
         <p>
           Our medium roasted coffee, the perfect balance between smooth and flavorful. A perfect way to start your morning or refresh yourself after a meal.
@@ -61,6 +72,7 @@
         </form>
 
       </div>
+
 
     </div>
 
